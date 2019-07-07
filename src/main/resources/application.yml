@@ -1,7 +1,31 @@
+#server:
+#  port: 7002
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    fetch-registry: false
+#    register-with-eureka: false
+#    service-url:
+#      defaultZone: http://eureka1.com:7001/eureka/,http://eureka3.com:7003/eureka/
+#    #server:
+#    #enable-self-preservation: false 注销eureka的自我保护机制
+#spring:
+#  application:
+#    name: eurake
+#  zipkin:
+#    base-url: http://localhost:9411
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:9001
+
+
+
 spring:
   cloud:
     config:
-      uri: http://localhost:3344
+      uri: http://localhost:8888
       name: itoken-eureka
       label: master
       profile: dev
